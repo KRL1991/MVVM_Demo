@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Project_Clean_Clean Architecture</string>
+    <string name="update_text">\@string Update Text</string>
 </resources>
