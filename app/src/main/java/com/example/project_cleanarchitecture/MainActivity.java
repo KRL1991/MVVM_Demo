@@ -1,6 +1,6 @@
 package com.example.project_cleanarchitecture;
 
-import androidx.annotation.StringRes;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import java.net.DatagramPacket;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,12 +23,14 @@ public class MainActivity extends AppCompatActivity {
 
         Button updateButton = (Button) findViewById(R.id.UpdateButton);
         updateButton.setOnClickListener(new View.OnClickListener() {
+
+
             @Override
             public void onClick(View v) {
                 EditText userInputEditText = (EditText) findViewById(R.id.UserInputEditText);
                 TextView savedTextTextView = (TextView) findViewById(R.id.SavedTextTextView);
 
-
+               savedTextTextView.setText(userInputEditText.getText());
 
 
             }
