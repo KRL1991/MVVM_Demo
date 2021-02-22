@@ -1,4 +1,4 @@
-package com.example.project_cleanarchitecture;
+package test;
 
 import org.junit.Test;
 
